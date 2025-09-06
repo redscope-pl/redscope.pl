@@ -1,22 +1,18 @@
 <script setup>
+import { marked } from "marked";
 
-import { marked } from 'marked'
+const emit = defineEmits(["approval"]);
 
-const emit = defineEmits(['approval'])
-
-const props = defineProps(
-    [
-        'cookiesFullAgreementLink',
-        'termsAndPoliciesLink',
-        'okidokiFlag',
-        'cookiesRequiredNotice'
-    ]
-)
+const props = defineProps([
+	"cookiesFullAgreementLink",
+	"termsAndPoliciesLink",
+	"okidokiFlag",
+	"cookiesRequiredNotice",
+]);
 
 function agreeAction() {
-    emit("approval")
+	emit("approval");
 }
-
 </script>
 
 <template>
