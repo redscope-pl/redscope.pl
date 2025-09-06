@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "commit at UNIXUSAT=$(node -e 'console.log(Date.now())')"
