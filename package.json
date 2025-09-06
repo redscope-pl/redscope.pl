@@ -3,12 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "test": "echo 'hello husky' by npm test",
     "build": "vite build",
     "test:unit": "vitest",
     "lint": "eslint . --fix",
     "dev": "vite",
     "format": "prettier --write src/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prepare": "husky"
   },
   "dependencies": {
     "@xterm/xterm": "^5.5.0",
