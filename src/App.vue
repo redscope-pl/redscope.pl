@@ -1,32 +1,31 @@
 <script setup>
-import HeaderNavtabs from './components/HeaderNavtabs.vue';
-import MainContainer from './components/MainContainer.vue';
-import LoadingScreen from './components/LoadingScreen.vue';
-import OkeyCookiesModal from './components/OkeyCookiesModal.vue';
-import { ref } from 'vue';
-import FooterSublitets from './components/FooterSublitets.vue';
-
+import { ref } from "vue";
+import FooterSublitets from "./components/FooterSublitets.vue";
+import HeaderNavtabs from "./components/HeaderNavtabs.vue";
+import LoadingScreen from "./components/LoadingScreen.vue";
+import MainContainer from "./components/MainContainer.vue";
+import OkeyCookiesModal from "./components/OkeyCookiesModal.vue";
 
 const loading = ref({
-  show: true
-})
+	show: true,
+});
 
 // document.addEventListener(
 //   "DOMContentLoaded",
 //   () => {
 setTimeout(() => {
-  loading.value.show = false;
-}, 1000)
+	loading.value.show = false;
+}, 1000);
 //   }
 // )
 
-console.log(document.cookie)
+console.log(document.cookie);
 
 const cookies = ref({
-  OK: document.cookie.trim() != "",
-  terms: "",
-  fullnote: "",
-  notice: `
+	OK: document.cookie.trim() != "",
+	terms: "",
+	fullnote: "",
+	notice: `
   
 # THIS IS SYSTEM OF MARKDOWN!
 
@@ -47,14 +46,13 @@ For example, to denote a heading, you add a number sign before it (e.g., # Headi
 
 ---
   
-  `
-})
+  `,
+});
 
 function acceptRequiredLocalStorageUse() {
-  document.cookie = `acceptCookiesUseTerms=GRANTED`;
-  cookies.value.OK = true
+	document.cookie = `acceptCookiesUseTerms=GRANTED`;
+	cookies.value.OK = true;
 }
-
 </script>
 
 <template>

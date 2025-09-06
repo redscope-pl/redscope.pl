@@ -1,15 +1,9 @@
 <script setup>
-
 const props = defineProps({
-    show: Boolean
-})
+	show: Boolean,
+});
 
-const loadingBrandLabel = [
-    "RedScope",
-    "Technologies"
-]
-
-
+const loadingBrandLabel = ["RedScope", "Technologies"];
 
 // function loadingScreen(mode) {
 //     switch (mode) {
