@@ -1,22 +1,19 @@
 <script setup>
+import Particles from "particlesjs";
 //import SliderRevealer from './SliderRevealer.vue';
-import { onMounted, onUnmounted } from 'vue';
-import Particles from 'particlesjs'
+import { onMounted, onUnmounted } from "vue";
 
 onMounted(() => {
-    Particles.init({
-        selector: '#backgroundImpresionCanvas',
-        connectParticles: true,
-        //color: "#aaa0000",
-        //maxParticles: (1000<(window.innerWidth+window.innerHeight)/2)?420:100
-        maxParticles: 123
-    });
-})
+	Particles.init({
+		selector: "#backgroundImpresionCanvas",
+		connectParticles: true,
+		//color: "#aaa0000",
+		//maxParticles: (1000<(window.innerWidth+window.innerHeight)/2)?420:100
+		maxParticles: 123,
+	});
+});
 
-onUnmounted(() => {
-
-})
-
+onUnmounted(() => {});
 </script>
 
 <template>

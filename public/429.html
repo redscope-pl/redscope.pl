@@ -1,0 +1,384 @@
+<!doctype html>
+<!-- An error page of RedScope (rs-tech-brandstyle 0.1.0): made by
+     scripts/build.py for each code in ERRORS; self-contained (the style and
+     the eye inline), so it works from any host: Traefik's error pages, GitHub
+     Pages, a bouncer's ban page. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>429 Too many requests · RedScope</title>
+<style>
+/* rs-tech-brandstyle 0.1.0: generated from src/tokens.json by scripts/build.py. */
+:root {
+  --rs-night-950: #0c0000;
+  --rs-night-950-rgb: 12 0 0;
+  --rs-night-900: #160100;
+  --rs-night-900-rgb: 22 1 0;
+  --rs-night-800: #1f0807;
+  --rs-night-800-rgb: 31 8 7;
+  --rs-night-700: #2b1210;
+  --rs-night-700-rgb: 43 18 16;
+  --rs-night-600: #3a1f1c;
+  --rs-night-600-rgb: 58 31 28;
+  --rs-gray-50: #f7f4f3;
+  --rs-gray-50-rgb: 247 244 243;
+  --rs-gray-100: #ece6e4;
+  --rs-gray-100-rgb: 236 230 228;
+  --rs-gray-200: #dcd2cf;
+  --rs-gray-200-rgb: 220 210 207;
+  --rs-gray-300: #c4b7b3;
+  --rs-gray-300-rgb: 196 183 179;
+  --rs-gray-400: #a8948f;
+  --rs-gray-400-rgb: 168 148 143;
+  --rs-gray-500: #8a7873;
+  --rs-gray-500-rgb: 138 120 115;
+  --rs-gray-600: #6f5f5a;
+  --rs-gray-600-rgb: 111 95 90;
+  --rs-gray-700: #554844;
+  --rs-gray-700-rgb: 85 72 68;
+  --rs-gray-800: #3d3331;
+  --rs-gray-800-rgb: 61 51 49;
+  --rs-white-100: #ffffff;
+  --rs-white-100-rgb: 255 255 255;
+  --rs-red-50: #fdeaec;
+  --rs-red-50-rgb: 253 234 236;
+  --rs-red-300: #ff6b74;
+  --rs-red-300-rgb: 255 107 116;
+  --rs-red-400: #f2444f;
+  --rs-red-400-rgb: 242 68 79;
+  --rs-red-500: #d61c2e;
+  --rs-red-500-rgb: 214 28 46;
+  --rs-red-600: #b11020;
+  --rs-red-600-rgb: 177 16 32;
+  --rs-red-700: #8a0c19;
+  --rs-red-700-rgb: 138 12 25;
+  --rs-red-800: #5e0811;
+  --rs-red-800-rgb: 94 8 17;
+  --rs-red-900: #3a1215;
+  --rs-red-900-rgb: 58 18 21;
+  --rs-crimson-50: #fde8ee;
+  --rs-crimson-50-rgb: 253 232 238;
+  --rs-crimson-300: #f77d99;
+  --rs-crimson-300-rgb: 247 125 153;
+  --rs-crimson-400: #f0506e;
+  --rs-crimson-400-rgb: 240 80 110;
+  --rs-crimson-500: #dc143c;
+  --rs-crimson-500-rgb: 220 20 60;
+  --rs-crimson-600: #b80f33;
+  --rs-crimson-600-rgb: 184 15 51;
+  --rs-crimson-700: #8f0b28;
+  --rs-crimson-700-rgb: 143 11 40;
+  --rs-crimson-800: #5f071a;
+  --rs-crimson-800-rgb: 95 7 26;
+  --rs-crimson-900: #3a0d18;
+  --rs-crimson-900-rgb: 58 13 24;
+  --rs-light-bg: var(--rs-gray-50);
+  --rs-light-bg-rgb: var(--rs-gray-50-rgb);
+  --rs-light-surface: var(--rs-white-100);
+  --rs-light-surface-rgb: var(--rs-white-100-rgb);
+  --rs-light-fg: var(--rs-night-900);
+  --rs-light-fg-rgb: var(--rs-night-900-rgb);
+  --rs-light-muted: var(--rs-gray-600);
+  --rs-light-muted-rgb: var(--rs-gray-600-rgb);
+  --rs-light-line: var(--rs-gray-200);
+  --rs-light-line-rgb: var(--rs-gray-200-rgb);
+  --rs-light-accent: var(--rs-red-600);
+  --rs-light-accent-rgb: var(--rs-red-600-rgb);
+  --rs-light-accent-hover: var(--rs-red-700);
+  --rs-light-accent-hover-rgb: var(--rs-red-700-rgb);
+  --rs-light-accent-fg: var(--rs-white-100);
+  --rs-light-accent-fg-rgb: var(--rs-white-100-rgb);
+  --rs-light-accent-soft: var(--rs-red-50);
+  --rs-light-accent-soft-rgb: var(--rs-red-50-rgb);
+  --rs-light-highlight: var(--rs-crimson-600);
+  --rs-light-highlight-rgb: var(--rs-crimson-600-rgb);
+  --rs-light-highlight-soft: var(--rs-crimson-50);
+  --rs-light-highlight-soft-rgb: var(--rs-crimson-50-rgb);
+  --rs-dark-bg: var(--rs-night-900);
+  --rs-dark-bg-rgb: var(--rs-night-900-rgb);
+  --rs-dark-surface: var(--rs-night-800);
+  --rs-dark-surface-rgb: var(--rs-night-800-rgb);
+  --rs-dark-fg: var(--rs-gray-50);
+  --rs-dark-fg-rgb: var(--rs-gray-50-rgb);
+  --rs-dark-muted: var(--rs-gray-400);
+  --rs-dark-muted-rgb: var(--rs-gray-400-rgb);
+  --rs-dark-line: var(--rs-night-600);
+  --rs-dark-line-rgb: var(--rs-night-600-rgb);
+  --rs-dark-accent: var(--rs-red-400);
+  --rs-dark-accent-rgb: var(--rs-red-400-rgb);
+  --rs-dark-accent-hover: var(--rs-red-300);
+  --rs-dark-accent-hover-rgb: var(--rs-red-300-rgb);
+  --rs-dark-accent-fg: var(--rs-night-900);
+  --rs-dark-accent-fg-rgb: var(--rs-night-900-rgb);
+  --rs-dark-accent-soft: var(--rs-red-900);
+  --rs-dark-accent-soft-rgb: var(--rs-red-900-rgb);
+  --rs-dark-highlight: var(--rs-crimson-400);
+  --rs-dark-highlight-rgb: var(--rs-crimson-400-rgb);
+  --rs-dark-highlight-soft: var(--rs-crimson-900);
+  --rs-dark-highlight-soft-rgb: var(--rs-crimson-900-rgb);
+  --rs-font-text: ui-monospace, "Ubuntu Mono", "DejaVu Sans Mono", "Liberation Mono", "Noto Sans Mono", Menlo, "Cascadia Mono", Consolas, "Courier New", monospace;
+  --rs-font-mono: ui-monospace, "Ubuntu Mono", "DejaVu Sans Mono", "Liberation Mono", "Noto Sans Mono", Menlo, "Cascadia Mono", Consolas, "Courier New", monospace;
+  --rs-radius-sm: 0.3rem;
+  --rs-radius-md: 0.75rem;
+  color-scheme: light;
+  --rs-bg: var(--rs-light-bg);
+  --rs-bg-rgb: var(--rs-light-bg-rgb);
+  --rs-surface: var(--rs-light-surface);
+  --rs-surface-rgb: var(--rs-light-surface-rgb);
+  --rs-fg: var(--rs-light-fg);
+  --rs-fg-rgb: var(--rs-light-fg-rgb);
+  --rs-muted: var(--rs-light-muted);
+  --rs-muted-rgb: var(--rs-light-muted-rgb);
+  --rs-line: var(--rs-light-line);
+  --rs-line-rgb: var(--rs-light-line-rgb);
+  --rs-accent: var(--rs-light-accent);
+  --rs-accent-rgb: var(--rs-light-accent-rgb);
+  --rs-accent-hover: var(--rs-light-accent-hover);
+  --rs-accent-hover-rgb: var(--rs-light-accent-hover-rgb);
+  --rs-accent-fg: var(--rs-light-accent-fg);
+  --rs-accent-fg-rgb: var(--rs-light-accent-fg-rgb);
+  --rs-accent-soft: var(--rs-light-accent-soft);
+  --rs-accent-soft-rgb: var(--rs-light-accent-soft-rgb);
+  --rs-highlight: var(--rs-light-highlight);
+  --rs-highlight-rgb: var(--rs-light-highlight-rgb);
+  --rs-highlight-soft: var(--rs-light-highlight-soft);
+  --rs-highlight-soft-rgb: var(--rs-light-highlight-soft-rgb);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --rs-bg: var(--rs-dark-bg);
+    --rs-bg-rgb: var(--rs-dark-bg-rgb);
+    --rs-surface: var(--rs-dark-surface);
+    --rs-surface-rgb: var(--rs-dark-surface-rgb);
+    --rs-fg: var(--rs-dark-fg);
+    --rs-fg-rgb: var(--rs-dark-fg-rgb);
+    --rs-muted: var(--rs-dark-muted);
+    --rs-muted-rgb: var(--rs-dark-muted-rgb);
+    --rs-line: var(--rs-dark-line);
+    --rs-line-rgb: var(--rs-dark-line-rgb);
+    --rs-accent: var(--rs-dark-accent);
+    --rs-accent-rgb: var(--rs-dark-accent-rgb);
+    --rs-accent-hover: var(--rs-dark-accent-hover);
+    --rs-accent-hover-rgb: var(--rs-dark-accent-hover-rgb);
+    --rs-accent-fg: var(--rs-dark-accent-fg);
+    --rs-accent-fg-rgb: var(--rs-dark-accent-fg-rgb);
+    --rs-accent-soft: var(--rs-dark-accent-soft);
+    --rs-accent-soft-rgb: var(--rs-dark-accent-soft-rgb);
+    --rs-highlight: var(--rs-dark-highlight);
+    --rs-highlight-rgb: var(--rs-dark-highlight-rgb);
+    --rs-highlight-soft: var(--rs-dark-highlight-soft);
+    --rs-highlight-soft-rgb: var(--rs-dark-highlight-soft-rgb);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --rs-bg: var(--rs-dark-bg);
+  --rs-bg-rgb: var(--rs-dark-bg-rgb);
+  --rs-surface: var(--rs-dark-surface);
+  --rs-surface-rgb: var(--rs-dark-surface-rgb);
+  --rs-fg: var(--rs-dark-fg);
+  --rs-fg-rgb: var(--rs-dark-fg-rgb);
+  --rs-muted: var(--rs-dark-muted);
+  --rs-muted-rgb: var(--rs-dark-muted-rgb);
+  --rs-line: var(--rs-dark-line);
+  --rs-line-rgb: var(--rs-dark-line-rgb);
+  --rs-accent: var(--rs-dark-accent);
+  --rs-accent-rgb: var(--rs-dark-accent-rgb);
+  --rs-accent-hover: var(--rs-dark-accent-hover);
+  --rs-accent-hover-rgb: var(--rs-dark-accent-hover-rgb);
+  --rs-accent-fg: var(--rs-dark-accent-fg);
+  --rs-accent-fg-rgb: var(--rs-dark-accent-fg-rgb);
+  --rs-accent-soft: var(--rs-dark-accent-soft);
+  --rs-accent-soft-rgb: var(--rs-dark-accent-soft-rgb);
+  --rs-highlight: var(--rs-dark-highlight);
+  --rs-highlight-rgb: var(--rs-dark-highlight-rgb);
+  --rs-highlight-soft: var(--rs-dark-highlight-soft);
+  --rs-highlight-soft-rgb: var(--rs-dark-highlight-soft-rgb);
+}
+
+
+/* The nexus: the terminal look of RedScope, from the author's Blogger drafts
+   ("Technomantic Nexus"), made of tokens and made accessible. Opt-in classes
+   (rs-*), usable with zone.css or alone. Motion stops for visitors who ask for
+   less of it; text keeps WCAG AA contrast; nothing is loaded from outside. */
+
+/* A skip link for keyboard users: the first thing on the page. */
+.rs-skip {
+  position: absolute; left: -999rem; top: .5rem; z-index: 200;
+  background: var(--rs-accent); color: var(--rs-accent-fg); padding: .5rem 1rem;
+}
+.rs-skip:focus { left: .5rem; }
+
+/* The frame: a red border around the whole page, the status lines at its
+   top and bottom. */
+.rs-frame {
+  min-height: 100vh; display: flex; flex-direction: column;
+  border: 4px solid var(--rs-accent);
+}
+.rs-status {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1.5rem;
+  background: var(--rs-accent); color: var(--rs-accent-fg);
+  font: 700 .75rem/1.6 var(--rs-font-mono); letter-spacing: .15em; text-transform: uppercase;
+  padding: .2rem 1rem;
+}
+.rs-status--quiet {
+  background: var(--rs-bg); color: var(--rs-accent);
+  border-top: 1px solid var(--rs-accent); font-style: italic;
+}
+
+/* The workspace: navigation | content | sidebar; one column on narrow screens. */
+.rs-nexus { flex: 1; display: grid; grid-template-columns: auto minmax(0, 1fr) 18rem; }
+.rs-nexus > main { padding: 2.5rem; min-width: 0; }
+@media (max-width: 64rem) {
+  .rs-nexus { grid-template-columns: minmax(0, 1fr); }
+  .rs-nexus > main { padding: 1.5rem 1rem; }
+}
+
+.rs-nav {
+  display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
+  padding: 2.5rem .75rem; background: var(--rs-surface);
+  border-right: 1px solid rgb(var(--rs-accent-rgb) / .25);
+}
+@media (max-width: 64rem) {
+  .rs-nav { flex-direction: row; justify-content: center; padding: .75rem; border-right: 0;
+    border-bottom: 1px solid rgb(var(--rs-accent-rgb) / .25); }
+}
+.rs-nav-hex {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 2.75rem; min-height: 2.75rem; padding: 0 .5rem;
+  border: 1px solid var(--rs-accent); color: var(--rs-fg);
+  font: .8rem var(--rs-font-mono); text-decoration: none;
+  transition: background-color .2s, color .2s, box-shadow .2s;
+}
+.rs-nav-hex:hover, .rs-nav-hex:focus-visible {
+  background: var(--rs-accent); color: var(--rs-accent-fg); text-decoration: none;
+  box-shadow: 0 0 15px rgb(var(--rs-accent-rgb) / .6);
+}
+
+.rs-sidebar {
+  padding: 2rem 1.5rem; background: var(--rs-surface);
+  border-left: 1px solid rgb(var(--rs-accent-rgb) / .25);
+}
+@media (max-width: 64rem) {
+  .rs-sidebar { border-left: 0; border-top: 1px solid rgb(var(--rs-accent-rgb) / .25); }
+}
+.rs-widget-title {
+  font: .8rem var(--rs-font-mono); letter-spacing: .2em; text-transform: uppercase;
+  color: var(--rs-muted); border-bottom: 1px solid var(--rs-line);
+  padding-bottom: .5rem; margin: 0 0 1rem;
+}
+
+/* Fragments: posts and records. */
+.rs-fragment {
+  background: rgb(var(--rs-surface-rgb) / .85); border: 1px solid rgb(var(--rs-accent-rgb) / .2);
+  padding: 2rem; margin-bottom: 3rem;
+}
+.rs-fragment-id {
+  display: block; margin-bottom: .75rem;
+  font: 700 .8rem var(--rs-font-mono); letter-spacing: .1em; color: var(--rs-accent);
+}
+.rs-title {
+  margin: 0 0 1.5rem; font-size: clamp(1.8rem, 5vw, 3.2rem); line-height: 1;
+  font-weight: 800; font-style: italic; text-transform: uppercase; letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+}
+.rs-title a { color: var(--rs-fg); text-decoration: underline;
+  text-decoration-color: rgb(var(--rs-accent-rgb) / .35); text-underline-offset: .15em; }
+.rs-title a:hover { text-decoration-color: var(--rs-accent); }
+.rs-content {
+  border-left: 2px solid var(--rs-accent); padding-left: 1.5rem; line-height: 1.8;
+}
+.rs-content img { max-width: 100%; height: auto; border: 1px solid var(--rs-accent); padding: 4px; background: var(--rs-bg); }
+.rs-motto { font-style: italic; font-weight: 800; text-transform: uppercase; }
+
+/* Backgrounds and overlays: decoration only, never in the way of reading. */
+.rs-grid-bg {
+  background-image:
+    linear-gradient(rgb(var(--rs-accent-rgb) / .06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(var(--rs-accent-rgb) / .06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+.rs-dots {
+  background-image: radial-gradient(rgb(var(--rs-accent-rgb) / .12) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+.rs-scanline {
+  position: fixed; left: 0; top: 0; width: 100%; height: 100px; z-index: 100; pointer-events: none;
+  background: linear-gradient(0deg, transparent, rgb(var(--rs-accent-rgb) / .05), transparent);
+  animation: rs-scan 10s linear infinite;
+}
+@keyframes rs-scan {
+  from { transform: translateY(-100px); }
+  to { transform: translateY(100vh); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rs-scanline { display: none; }
+  .rs-nav-hex { transition: none; }
+}
+
+/* Data: lists, tiles and cards that js/rs-data.js fills from JSON, or that a
+   page writes out itself. */
+.rs-feed { list-style: none; margin: 0; padding: 0; }
+.rs-feed li { border-bottom: 1px solid var(--rs-line); padding: .6rem 0; }
+.rs-feed .rs-kind { display: block; font: 700 .75rem var(--rs-font-mono); letter-spacing: .1em;
+  text-transform: uppercase; color: var(--rs-highlight); }
+.rs-feed a { color: var(--rs-fg); }
+.rs-feed a:hover { color: var(--rs-accent); }
+.rs-feed time, .rs-feed .rs-note { display: block; font-size: .8rem; color: var(--rs-muted); }
+.rs-tiles { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); }
+.rs-tile { border: 1px solid var(--rs-line); padding: .75rem 1rem; background: var(--rs-surface); }
+.rs-tile b { display: block; font-size: 1.6rem; color: var(--rs-accent); }
+.rs-tile span { font-size: .8rem; color: var(--rs-muted); text-transform: uppercase; letter-spacing: .1em; }
+[aria-busy="true"] { opacity: .6; }
+.rs-data-error { color: var(--rs-accent); }
+
+/* Text for screen readers only (rs-scramble.js keeps the real words there). */
+.rs-sr {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--rs-bg); color: var(--rs-fg); font: 16px/1.65 var(--rs-font-text); }
+a { color: var(--rs-accent); }
+main { flex: 1; display: grid; place-items: center; padding: 2rem 1rem; }
+.rs-fragment { max-width: 40rem; width: 100%; margin: 0; }
+.code { font-size: clamp(4rem, 18vw, 8rem); font-weight: 800; line-height: 1; color: var(--rs-accent); margin: 0; }
+.eye { display: block; margin-bottom: 1.5rem; }
+.eye svg { display: block; height: 3rem; width: auto; }
+.ways { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.5rem; }
+</style>
+</head>
+<body>
+<div class="rs-frame rs-dots">
+  <div class="rs-status">
+    <span>error 429 // Too many requests</span>
+    <span>RedScope Technologies</span>
+  </div>
+  <main class="rs-grid-bg">
+    <article class="rs-fragment">
+      <span class="eye" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="237 193 528 414" role="img" aria-labelledby="t">
+  <title id="t">RedScope Technologies</title>
+  <path fill="#b11020" fill-rule="evenodd" d="M460.4 591.1C447.9 585.7 433.5 577.7 422.5 570.1C413.5 563.9 411.5 562.5 411.0 562.0C410.7 561.7 407.8 559.3 404.5 556.5C401.2 553.8 393.3 546.5 387.0 540.5C379.4 533.2 373.1 528.1 368.5 525.5C339.6 509.6 298.1 474.9 277.5 449.5C258.8 426.3 247.0 409.1 247.0 404.7C247.0 394.2 292.1 340.0 318.6 318.6C328.6 310.5 330.9 307.7 334.5 299.0C348.5 265.3 384.8 227.4 418.3 211.5C424.8 208.4 439.4 203.0 441.3 203.0C441.7 203.0 436.6 208.5 429.9 215.3C423.3 222.0 415.1 230.9 411.8 235.0C408.5 239.1 404.9 243.6 403.8 244.9C400.1 249.2 391.0 263.0 388.4 268.2C385.3 274.2 383.1 274.6 408.3 265.0C440.2 252.9 464.4 248.6 501.0 248.6C539.2 248.7 565.3 253.5 599.8 267.1C606.8 269.8 613.1 271.9 613.8 271.8C615.4 271.4 605.7 255.3 596.9 243.7C589.6 234.2 585.2 229.3 571.8 215.6C558.0 201.6 558.3 200.5 574.2 207.7C609.5 223.8 638.9 249.6 657.2 280.6C662.9 290.2 663.4 291.2 667.8 301.1C670.6 307.4 678.9 317.0 681.5 317.0C683.4 317.0 720.2 354.9 729.5 366.5C734.4 372.6 738.7 377.7 739.0 378.0C741.4 380.1 755.0 402.9 755.0 404.8C755.0 411.6 723.2 451.8 699.8 474.5C675.4 498.2 659.0 510.7 632.0 526.3C625.7 529.9 620.9 533.9 613.0 541.9C594.3 561.0 568.5 578.6 542.0 590.5C525.1 598.1 519.9 598.6 529.9 591.6C546.6 580.0 577.4 549.3 569.3 552.4C568.4 552.8 563.8 553.9 559.1 555.0C519.9 563.6 487.1 563.8 446.6 555.9C438.4 554.2 431.6 553.1 431.3 553.3C429.7 555.0 454.6 578.8 469.4 589.8C481.8 599.0 479.2 599.3 460.4 591.1ZM485.8 513.3L485.5 495.6L477.5 493.2C443.8 483.2 419.6 458.8 412.2 427.4L410.3 419.5L387.9 419.2C375.6 419.0 363.5 419.2 361.2 419.5C356.9 420.1 356.8 420.2 357.4 423.3C358.8 430.5 381.1 480.8 387.5 491.0C388.8 493.0 391.2 497.4 392.9 500.7C398.9 512.7 411.4 530.0 414.0 530.0C414.3 530.0 414.3 526.6 414.2 522.4C413.9 516.3 414.1 514.8 415.2 515.2C436.8 523.2 467.8 530.4 482.3 530.9L486.0 531.0L485.8 513.3ZM528.8 529.9C539.7 528.7 560.4 523.6 575.7 518.5C588.8 514.0 588.0 513.8 588.0 522.1C588.0 532.4 589.1 531.5 602.6 510.5C614.9 491.4 643.8 430.2 644.3 422.2L644.5 419.5L617.9 419.2L591.3 419.0L590.1 424.7C583.2 456.1 556.1 484.4 524.3 493.2L516.1 495.4L515.8 499.5C515.0 510.8 516.1 531.0 517.6 531.0C518.4 531.0 523.4 530.5 528.8 529.9ZM340.2 463.3C337.7 458.4 331.0 440.3 326.9 427.5C320.5 407.6 318.9 398.9 318.3 379.8C318.0 370.0 317.5 362.0 317.2 362.0C314.8 362.0 289.6 391.2 282.7 402.0L281.0 404.7L288.1 414.1C307.1 439.0 340.3 472.5 341.8 468.1C342.0 467.6 341.3 465.4 340.2 463.3ZM670.5 461.1C678.9 453.3 697.2 434.3 701.2 429.3C719.8 406.0 720.2 405.5 719.0 402.5C717.9 399.7 693.2 370.2 688.4 366.1L684.5 362.6L684.3 367.1C682.7 396.8 677.2 424.5 669.5 441.5C666.3 448.6 660.0 465.2 660.0 466.6C660.0 469.3 664.1 467.1 670.5 461.1ZM509.5 465.6C560.7 457.7 580.0 395.7 542.4 360.0C503.6 323.1 440.0 350.5 440.0 404.1C440.0 434.5 461.0 460.3 490.0 465.5C499.7 467.2 499.0 467.2 509.5 465.6ZM492.0 431.5C486.3 429.7 477.8 422.3 475.1 416.7C470.6 407.4 472.6 393.9 479.5 386.2C492.8 371.5 515.4 373.8 525.2 390.9C531.6 401.9 529.3 417.0 519.9 425.4C511.9 432.6 502.3 434.7 492.0 431.5ZM412.0 383.0C414.2 374.5 419.3 362.4 423.2 356.5C427.3 350.4 429.0 353.0 399.4 321.1C396.1 317.5 392.0 313.0 390.4 311.1L387.4 307.8L378.9 312.4C374.2 314.9 370.0 317.0 369.6 317.0C369.1 317.0 369.1 313.4 369.5 309.0C369.9 304.6 369.8 301.0 369.4 301.0C368.1 301.0 359.6 316.3 356.1 324.8C350.4 338.7 346.0 369.4 347.8 383.0L348.5 388.5L374.0 389.0C388.0 389.3 401.9 389.6 404.9 389.5L410.4 389.5L412.0 383.0ZM652.8 388.5C653.0 388.3 653.4 383.5 653.7 377.8C654.6 361.6 651.4 339.5 646.5 327.4C641.9 316.2 634.3 302.0 632.8 302.0C632.5 302.0 632.3 305.4 632.4 309.5C632.6 313.6 632.5 317.0 632.2 317.0C631.4 317.0 619.5 310.9 618.5 309.9C615.4 306.9 609.8 311.5 593.2 330.5C589.8 334.4 584.6 340.2 581.6 343.5C575.1 350.5 575.0 351.1 579.0 357.3C583.9 365.1 585.7 369.2 588.6 379.1C590.0 384.3 591.4 388.7 591.5 389.0C591.9 389.6 652.2 389.1 652.8 388.5ZM457.0 324.6C459.8 322.1 467.4 319.2 478.5 316.4C500.7 310.8 522.6 313.4 543.9 324.2C553.2 328.9 554.3 329.3 555.4 327.8C556.1 326.9 560.0 322.4 564.2 317.8C582.8 297.4 585.1 294.7 584.3 293.9C581.9 291.6 555.2 283.5 541.0 280.8C527.4 278.3 491.0 277.2 476.1 278.9C452.4 281.7 417.0 290.8 417.0 294.1C417.0 295.0 431.1 311.3 436.9 317.1C438.3 318.5 441.4 321.7 443.8 324.3L448.1 329.0L451.8 327.4C453.8 326.6 456.1 325.3 457.0 324.6Z"/>
+</svg></span>
+      <span class="rs-fragment-id">SIGNAL LOST // 429</span>
+      <p class="code">429</p>
+      <h1 class="rs-title">Too many requests</h1>
+      <div class="rs-content"><p>Slow down a little: try again in a minute.</p></div>
+      <nav class="ways" aria-label="Ways on">
+        <a class="rs-nav-hex" href="/">[H] home of this address</a>
+        <a class="rs-nav-hex" href="https://www.redscope.pl/">[Ω] www.redscope.pl</a>
+      </nav>
+    </article>
+  </main>
+  <footer class="rs-status rs-status--quiet">
+    <span>© RedScope Technologies</span>
+    <span class="rs-motto">"Code is the spell, logic is the catalyst"</span>
+  </footer>
+</div>
+</body>
+</html>

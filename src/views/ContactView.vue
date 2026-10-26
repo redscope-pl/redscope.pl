@@ -1,7 +1,5 @@
 <script setup>
-
-import SliderRevealer from '@/components/SliderRevealer.vue';
-
+import SliderRevealer from "@/components/SliderRevealer.vue";
 </script>
 
 <template>

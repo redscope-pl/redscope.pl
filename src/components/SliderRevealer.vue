@@ -1,6 +1,5 @@
 <script setup>
-import { onMounted } from 'vue'
-
+import { onMounted } from "vue";
 
 //import Reveal from 'reveal.js'
 //import Markdown from 'reveal.js/plugin/markdown/markdown.js'
@@ -15,9 +14,7 @@ import { onMounted } from 'vue'
 //         gfm: true
 //     }
 // })
-onMounted(() => {
-
-})
+onMounted(() => {});
 
 //import Reveal from 'reveal.js';
 // import Markdown from 'reveal.js/plugin/markdown/markdown.esm.js';

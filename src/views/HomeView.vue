@@ -1,5 +1,5 @@
 <script setup>
-import PresentingSection from '@/components/PresentingSection.vue';
+import PresentingSection from "@/components/PresentingSection.vue";
 </script>
 
 <template>
